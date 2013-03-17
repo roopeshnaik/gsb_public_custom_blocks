@@ -1,1 +1,95 @@
 <?php
+
+/**
+ * Implements hook_theme().
+ *
+ * Define custom theme hooks
+ */
+function gsb_public_custom_blocks_theme($existing, $type , $theme, $path) {
+
+  return array(
+    'gsb_public_custom_blocks_virtual_tour' => array(
+      'template' => 'virtual_tour/templates/gsb-public-custom-blocks-virtual-tour',
+      'file' => 'virtual_tour/virtual_tour.theme.inc',
+    ),
+    'gsb_public_custom_blocks_map_link' => array(
+      'variables' => array('text' => ''),
+      'template' => 'map_link/templates/gsb-public-custom-blocks-map-link',
+      'file' => 'map_link/map_link.theme.inc',
+    ),
+    'gsb_public_custom_blocks_rethink' => array(
+      'template' => 'rethink/templates/gsb-public-custom-blocks-rethink',
+      'file' => 'rethink/rethink.theme.inc',
+    ),
+    'gsb_public_custom_blocks_follow_us' => array(
+      'template' => 'follow_us/templates/gsb-public-custom-blocks-follow-us',
+      'file' => 'follow_us/follow_us.theme.inc',
+    ),
+  );
+}
+
+/**
+ * Implementation of hook_block_info()
+ *
+ */
+function gsb_public_custom_blocks_block_info() {
+  return array(
+    'gpcb_virtual_tour' => array(
+      'info' => t('Custom CTA: Virtual Tour'),
+      'cache' => DRUPAL_CACHE_GLOBAL,
+    ),
+    'gpcb_maps_parking_info_more' => array(
+      'info' => t('Custom CTA: Maps, Parking Info & More'),
+      'cache' => DRUPAL_CACHE_GLOBAL,
+    ),
+    'gpcb_plan_your_visit' => array(
+      'info' => t('Custom CTA: Plan Your Visit'),
+      'cache' => DRUPAL_CACHE_GLOBAL,
+    ),
+    'gpcb_visit_us' => array(
+      'info' => t('Custom CTA: Visit Us'),
+      'cache' => DRUPAL_CACHE_GLOBAL,
+    ),
+    'gpcb_rethink' => array(
+      'info' => t('Custom CTA: Rethink'),
+      'cache' => DRUPAL_CACHE_GLOBAL,
+    ),
+    'gpcb_follow_us' => array(
+      'info' => t('Custom CTA: Follow Us'),
+      'cache' => DRUPAL_CACHE_GLOBAL,
+    ),
+  );
+}
+
+/**
+ * Implementation of hook_block_view
+ *
+ * Define callbacks for block display
+ *
+ */
+function gsb_public_custom_blocks_block_view($delta = '') {
+  $block = array();
+
+  switch ($delta) {
+    case 'gpcb_virtual_tour':
+      $block['content'] = theme('gsb_public_custom_blocks_virtual_tour');
+      break;
+    case 'gpcb_maps_parking_info_more':
+      $block['content'] = theme('gsb_public_custom_blocks_map_link', array('text' => 'Maps, Parking Info & More'));
+      break;
+    case 'gpcb_plan_your_visit':
+      $block['content'] = theme('gsb_public_custom_blocks_map_link', array('text' => 'Plan Your Visit'));
+      break;
+    case 'gpcb_visit_us':
+      $block['content'] = theme('gsb_public_custom_blocks_map_link', array('text' => 'Visit Us'));
+      break;
+    case 'gpcb_rethink':
+      $block['content'] = theme('gsb_public_custom_blocks_rethink');
+      break;
+    case 'gpcb_follow_us':
+      $block['content'] = theme('gsb_public_custom_blocks_follow_us');
+      break;
+  }
+
+  return $block;
+}
