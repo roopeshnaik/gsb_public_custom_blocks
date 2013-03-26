@@ -25,6 +25,10 @@ function gsb_public_custom_blocks_theme($existing, $type , $theme, $path) {
       'template' => 'follow_us/templates/gsb-public-custom-blocks-follow-us',
       'file' => 'follow_us/follow_us.theme.inc',
     ),
+    'gsb_public_custom_blocks_enews_signup' => array(
+      'template' => 'enews_signup/templates/gsb-public-custom-blocks-enews-signup',
+      'file' => 'enews_signup/enews_signup.theme.inc',
+    ),
   );
 }
 
@@ -58,6 +62,10 @@ function gsb_public_custom_blocks_block_info() {
       'info' => t('Custom CTA: Follow Us'),
       'cache' => DRUPAL_CACHE_GLOBAL,
     ),
+    'gpcb_enews_signup' => array(
+      'info' => t('Custom CTA: eNews Signup'),
+      'cache' => DRUPAL_CACHE_GLOBAL,
+    ),
   );
 }
 
@@ -89,7 +97,31 @@ function gsb_public_custom_blocks_block_view($delta = '') {
     case 'gpcb_follow_us':
       $block['content'] = theme('gsb_public_custom_blocks_follow_us');
       break;
+    case 'gpcb_enews_signup':
+      $block['content'] = theme('gsb_public_custom_blocks_enews_signup');
+      break;
   }
 
   return $block;
 }
+
+/**
+ * Implements hook_menu().
+ *
+ * Add form for eNews signup
+ */
+function gsb_public_custom_blocks_menu() {
+
+  $items['enews_signup'] = array(
+    'title' => 'Signup for eNews',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('gsb_public_custom_blocks_enews_signup_form'),
+    'access arguments' => array('access content'),
+    'file' => 'gsb_public_custom_blocks_enews.inc',
+    'type' => MENU_CALLBACK,
+  );
+
+  return $items;
+}
+
+
