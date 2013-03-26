@@ -6,9 +6,7 @@
       <input type="text" id="edit-email" name="email" value="" size="60" maxlength="128" class="form-text">
       <div class="description">Please enter your email address.</div>
     </div>
-  <input type="submit" id="edit-submit" name="op" value="Submit" class="form-submit"><input type="hidden" name="form_build_id" value="form-KUftdGstPdyV6XlBzJ9yoN7qygZxZAEMeA9ING0xQnI">
-  <input type="hidden" name="form_token" value="p2fuCBcOQRxJ0OABaVnwbb4ineymXHrk3vK15jIwB7k">
-  <input type="hidden" name="form_id" value="gsb_public_custom_blocks_enews_signup_form">
+  <input type="submit" id="edit-submit" name="op" value="Submit" class="form-submit">
   </div>
   </form>
 </div>
