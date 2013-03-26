@@ -105,23 +105,5 @@ function gsb_public_custom_blocks_block_view($delta = '') {
   return $block;
 }
 
-/**
- * Implements hook_menu().
- *
- * Add form for eNews signup
- */
-function gsb_public_custom_blocks_menu() {
-
-  $items['enews_signup'] = array(
-    'title' => 'Signup for eNews',
-    'page callback' => 'drupal_get_form',
-    'page arguments' => array('gsb_public_custom_blocks_enews_signup_form'),
-    'access arguments' => array('access content'),
-    'file' => 'gsb_public_custom_blocks_enews.inc',
-    'type' => MENU_CALLBACK,
-  );
-
-  return $items;
-}
 
 
