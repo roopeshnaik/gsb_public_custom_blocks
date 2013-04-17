@@ -39,7 +39,7 @@ function gsb_public_custom_blocks_block_info() {
       'cache' => DRUPAL_CACHE_GLOBAL,
     ),
     'gpcb_maps_parking_info_more' => array(
-      'info' => t('Custom CTA: Maps, Parking Info & More'),
+      'info' => t('Custom CTA: Get Directions, Parking Info, and More'),
       'cache' => DRUPAL_CACHE_GLOBAL,
     ),
     'gpcb_plan_your_visit' => array(
@@ -75,7 +75,7 @@ function gsb_public_custom_blocks_block_view($delta = '') {
       $block['content'] = theme('gsb_public_custom_blocks_virtual_tour');
       break;
     case 'gpcb_maps_parking_info_more':
-      $block['content'] = theme('gsb_public_custom_blocks_map_link', array('text' => 'Maps, Parking Info & More'));
+      $block['content'] = theme('gsb_public_custom_blocks_map_link', array('text' => 'Get Directions, Parking Info, and More'));
       break;
     case 'gpcb_plan_your_visit':
       $block['content'] = theme('gsb_public_custom_blocks_map_link', array('text' => 'Plan Your Visit'));
