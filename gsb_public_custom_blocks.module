@@ -105,5 +105,11 @@ function gsb_public_custom_blocks_block_view($delta = '') {
   return $block;
 }
 
-
-
+/**
+ * Implements hook_ctools_plugin_directory().
+ */
+function gsb_public_custom_blocks_ctools_plugin_directory($owner, $plugin_type) {
+  if ($owner == 'ctools') {
+    return "plugins/$plugin_type";
+  }
+}
