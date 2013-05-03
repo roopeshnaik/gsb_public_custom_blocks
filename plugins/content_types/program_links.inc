@@ -63,7 +63,7 @@ function gsb_public_custom_blocks_program_links_content_type_render($subtype, $c
             ),
           ),
           'all-programs' => array(
-            'title' => t('See All Porgrams'),
+            'title' => t('See All Programs'),
             'href' => 'programs',
             'attributes' => array(
               'class' => array(
