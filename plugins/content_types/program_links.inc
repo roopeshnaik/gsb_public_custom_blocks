@@ -28,6 +28,7 @@ function gsb_public_custom_blocks_program_links_content_type_render($subtype, $c
             'attributes' => array(
               'class' => array(
                 'item-0',
+                'cta-link',
               ),
             ),
           ),
@@ -37,6 +38,7 @@ function gsb_public_custom_blocks_program_links_content_type_render($subtype, $c
             'attributes' => array(
               'class' => array(
                 'item-1',
+                'cta-link',
               ),
             ),
           ),
@@ -46,6 +48,7 @@ function gsb_public_custom_blocks_program_links_content_type_render($subtype, $c
             'attributes' => array(
               'class' => array(
                 'item-2',
+                'cta-link',
               ),
             ),
           ),
@@ -55,6 +58,7 @@ function gsb_public_custom_blocks_program_links_content_type_render($subtype, $c
             'attributes' => array(
               'class' => array(
                 'item-3',
+                'cta-link',
               ),
             ),
           ),
@@ -64,6 +68,7 @@ function gsb_public_custom_blocks_program_links_content_type_render($subtype, $c
             'attributes' => array(
               'class' => array(
                 'item-4',
+                'cta-link',
               ),
             ),
           ),
