@@ -29,6 +29,10 @@ function gsb_public_custom_blocks_theme($existing, $type , $theme, $path) {
       'template' => 'enews_signup/templates/gsb-public-custom-blocks-enews-signup',
       'file' => 'enews_signup/enews_signup.theme.inc',
     ),
+    'gsb_public_custom_blocks_about_campus' => array(
+      'template' => 'about_campus/templates/gsb-public-custom-blocks-about-campus',
+      'file' => 'about_campus/about_campus.theme.inc',
+    ),
   );
 }
 
@@ -78,6 +82,10 @@ function gsb_public_custom_blocks_block_info() {
       'info' => t('Breadcrumbs'),
       'cache' => DRUPAL_CACHE_GLOBAL,
     ),
+    'gpcb_about_campus' => array(
+      'info' => t('Custom CTA: Learn About Our Campus'),
+      'cache' => DRUPAL_CACHE_GLOBAL,
+    ),
   );
 }
 
@@ -111,6 +119,9 @@ function gsb_public_custom_blocks_block_view($delta = '') {
       break;
     case 'gpcb_enews_signup':
       $block['content'] = theme('gsb_public_custom_blocks_enews_signup');
+      break;
+    case 'gpcb_about_campus':
+      $block['content'] = theme('gsb_public_custom_blocks_about_campus');
       break;
 
     case 'gpcb_banner_tagline':
