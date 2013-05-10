@@ -196,3 +196,33 @@ function gsb_public_custom_blocks_ctools_plugin_directory($owner, $plugin_type) 
     return "plugins/$plugin_type";
   }
 }
+
+/**
+ * Helper function that generates render array for vertical tabs
+ */
+function _gsb_public_custom_blocks_generate_tabs($tabs) {
+  $content['#groups']['group_tabs'] = new stdClass();
+  $content['#groups']['group_tabs']->group_name = 'group';
+  $content['#groups']['group_tabs']->format_type = 'tabs';
+  $content['#pre_render'][] = 'field_group_build_pre_render';
+  $content['#entity_type'] = 'block';
+  $content['#bundle'] = 'tabs';
+  $content['#groups']['group_tabs']->weight = 0;
+
+  foreach ($tabs as $key => $val) {
+    $group = 'group_tab' . $key;
+    $content['#groups'][$group] = new stdClass();
+    $content['#groups'][$group]->group_name = $key;
+    $content['#groups'][$group]->format_type = 'tab';
+    $content['#groups'][$group]->format_settings['formatter'] = 'closed';
+    $content['#groups'][$group]->children[] = $group;
+    $content['#groups'][$group]->label = $val['title'];
+    $content['#groups'][$group]->weight = (int)$key;
+    $content['#groups']['group_tabs']->children[] = $group;
+    $content['#group_children'][$group] = 'group_tabs';
+    $content['#group_children'][$key] = $group;
+    $content[$key] = $tabs[$key];
+  }
+  $content['#fieldgroups'] = $content['#groups'];
+  return $content;
+}
