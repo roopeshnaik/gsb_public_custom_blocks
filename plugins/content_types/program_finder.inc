@@ -16,74 +16,74 @@ function gsb_public_custom_blocks_program_finder_content_type_render($subtype, $
     array(
         'title' => 'Full-Time Degree',
         '#markup' => '<a href="/">Full-Time Degrees</a>
-<p>Porta, mi justo elementum justo, vitae gravida dui sapien vel metus, Quisque elementum, mauris. Sed odio est, auctor ac, sollicitudin in, consequat vitae, orci. Fusce id felis. Vivamus sollicitudin.</p>
+<p>Porta, mi justo elementum justo, vitae gravida dui sapien vel metus, Quisque elementum, mauris.</p>
 <a href="/">PhD Programs</a>
-<p>Porta, mi justo elementum justo, vitae gravida dui sapien vel metus, Quisque elementum, mauris. Macenas at justo id velit placerat molestie ultricies eu, sagittis non.</p>'
+<p>Porta, mi justo elementum justo, vitae gravida dui sapien vel metus, Quisque elementum, mauris.</p>'
       ),
     array(
         'title' => 'Executive Education',
         '#markup' => '<a href="/">Executive Education</a>
-<p>Porta, mi justo elementum justo, vitae gravida dui sapien vel metus, Quisque elementum, mauris. Sed odio est, auctor ac, sollicitudin in, consequat vitae, orci. Fusce id felis. Vivamus sollicitudin.</p>'
+<p>Porta, mi justo elementum justo, vitae gravida dui sapien vel metus, Quisque elementum, mauris.</p>'
       ),
       array(
         'title' => 'General Management',
         '#markup' => '<a href="/">MBA Program</a>
-<p>Porta, mi justo elementum justo, vitae gravida dui sapien vel metus, Quisque elementum, mauris. Sed odio est, auctor ac, sollicitudin in, consequat vitae, orci. Fusce id felis. Vivamus sollicitudin.</p>
+<p>Porta, mi justo elementum justo, vitae gravida dui sapien vel metus, Quisque elementum, mauris.</p>
 <a href="/">Msx Program</a>
-<p>Porta, mi justo elementum justo, vitae gravida dui sapien vel metus, Quisque elementum, mauris. Sed odio est, auctor ac, sollicitudin in, consequat vitae, orci.</p>
+<p>Porta, mi justo elementum justo, vitae gravida dui sapien vel metus, Quisque elementum, mauris.</p>
 <a href="/">PhD Program</a>
-<p>Porta, mi justo elementum justo, vitae gravida dui sapien vel metus, Quisque elementum, mauris. Macenas at justo id velit placerat molestie ultricies eu, sagittis non.</p>'
+<p>Porta, mi justo elementum justo, vitae gravida dui sapien vel metus, Quisque elementum, mauris.</p>'
       ),
       array(
         'title' => 'Global',
-        '#markup' => '<a href="/">MBA Program</a>
-<p>Porta, mi justo elementum justo, vitae gravida dui sapien vel metus, Quisque elementum, mauris. Sed odio est, auctor ac, sollicitudin in, consequat vitae, orci. Fusce id felis. Vivamus sollicitudin.</p>
+        '#markup' => '<div class="program-columns"><div class="column-a"><a href="/">MBA Program</a>
+<p>Porta, mi justo elementum justo, vitae gravida dui sapien vel metus, Quisque elementum, mauris.</p>
 <a href="/">PhD Program</a>
-<p>Porta, mi justo elementum justo, vitae gravida dui sapien vel metus, Quisque elementum, mauris. Macenas at justo id velit placerat molestie ultricies eu, sagittis non.</p>
+<p>Porta, mi justo elementum justo, vitae gravida dui sapien vel metus, Quisque elementum, mauris.</p>
 <a href="/">Executive Education</a>
-<p>Porta, mi justo elementum justo, vitae gravida dui sapien vel metus, Quisque elementum, mauris. Sed odio est, auctor ac, sollicitudin in, consequat vitae, orci.</p>
-<a href="/">Stanford Ignite</a>
-<p>Porta, mi justo elementum justo, vitae gravida dui sapien vel metus, Quisque elementum, mauris. Sed odio est, auctor ac, sollicitudin in, consequat vitae, orci.</p>
+<p>Porta, mi justo elementum justo, vitae gravida dui sapien vel metus, Quisque elementum, mauris.</p></div>
+<div class="column-b"><a href="/">Stanford Ignite</a>
+<p>Porta, mi justo elementum justo, vitae gravida dui sapien vel metus, Quisque elementum, mauris.</p>
 <a href="/">Stanford Online Innovation and Entrepreneurship Certificate</a>
-<p>Porta, mi justo elementum justo, vitae gravida dui sapien vel metus, Quisque elementum, mauris. Sed odio est, auctor ac, sollicitudin in, consequat vitae, orci.</p>
+<p>Porta, mi justo elementum justo, vitae gravida dui sapien vel metus, Quisque elementum, mauris.</p>
 <a href="/">SEED Programs</a>
-<p>Porta, mi justo elementum justo, vitae gravida dui sapien vel metus, Quisque elementum, mauris. Sed odio est, auctor ac, sollicitudin in, consequat vitae, orci.</p>'
+<p>Porta, mi justo elementum justo, vitae gravida dui sapien vel metus, Quisque elementum, mauris.</p></div></div>'
       ),
       array(
         'title' => 'Entrepreneurship',
         '#markup' => '<a href="/">MBA Program</a>
-<p>Porta, mi justo elementum justo, vitae gravida dui sapien vel metus, Quisque elementum, mauris. Sed odio est, auctor ac, sollicitudin in, consequat vitae, orci. Fusce id felis. Vivamus sollicitudin.</p>
+<p>Porta, mi justo elementum justo, vitae gravida dui sapien vel metus, Quisque elementum, mauris.</p>
 <a href="/">Msx Program</a>
-<p>Porta, mi justo elementum justo, vitae gravida dui sapien vel metus, Quisque elementum, mauris. Sed odio est, auctor ac, sollicitudin in, consequat vitae, orci.</p>
+<p>Porta, mi justo elementum justo, vitae gravida dui sapien vel metus, Quisque elementum, mauris.</p>
 <a href="/">PhD Program</a>
-<p>Porta, mi justo elementum justo, vitae gravida dui sapien vel metus, Quisque elementum, mauris. Macenas at justo id velit placerat molestie ultricies eu, sagittis non.</p>'
+<p>Porta, mi justo elementum justo, vitae gravida dui sapien vel metus, Quisque elementum, mauris.</p>'
       ),
       array(
         'title' => 'Multi-Disciplinary',
         '#markup' => '<a href="/">MBA Program</a>
-<p>Porta, mi justo elementum justo, vitae gravida dui sapien vel metus, Quisque elementum, mauris. Sed odio est, auctor ac, sollicitudin in, consequat vitae, orci. Fusce id felis. Vivamus sollicitudin.</p>
+<p>Porta, mi justo elementum justo, vitae gravida dui sapien vel metus, Quisque elementum, mauris.</p>
 <a href="/">Msx Program</a>
-<p>Porta, mi justo elementum justo, vitae gravida dui sapien vel metus, Quisque elementum, mauris. Sed odio est, auctor ac, sollicitudin in, consequat vitae, orci.</p>
+<p>Porta, mi justo elementum justo, vitae gravida dui sapien vel metus, Quisque elementum, mauris.</p>
 <a href="/">PhD Program</a>
-<p>Porta, mi justo elementum justo, vitae gravida dui sapien vel metus, Quisque elementum, mauris. Macenas at justo id velit placerat molestie ultricies eu, sagittis non.</p>'
+<p>Porta, mi justo elementum justo, vitae gravida dui sapien vel metus, Quisque elementum, mauris.</p>'
       ),
       array(
         'title' => 'Online',
         '#markup' => '<a href="/">MBA Program</a>
-<p>Porta, mi justo elementum justo, vitae gravida dui sapien vel metus, Quisque elementum, mauris. Sed odio est, auctor ac, sollicitudin in, consequat vitae, orci. Fusce id felis. Vivamus sollicitudin.</p>
+<p>Porta, mi justo elementum justo, vitae gravida dui sapien vel metus, Quisque elementum, mauris.</p>
 <a href="/">Msx Program</a>
-<p>Porta, mi justo elementum justo, vitae gravida dui sapien vel metus, Quisque elementum, mauris. Sed odio est, auctor ac, sollicitudin in, consequat vitae, orci.</p>
+<p>Porta, mi justo elementum justo, vitae gravida dui sapien vel metus, Quisque elementum, mauris.</p>
 <a href="/">PhD Program</a>
-<p>Porta, mi justo elementum justo, vitae gravida dui sapien vel metus, Quisque elementum, mauris. Macenas at justo id velit placerat molestie ultricies eu, sagittis non.</p>'
+<p>Porta, mi justo elementum justo, vitae gravida dui sapien vel metus, Quisque elementum, mauris.</p>'
       ),
       array(
         'title' => 'Undergraduate',
         '#markup' => '<a href="/">MBA Program</a>
-<p>Porta, mi justo elementum justo, vitae gravida dui sapien vel metus, Quisque elementum, mauris. Sed odio est, auctor ac, sollicitudin in, consequat vitae, orci. Fusce id felis. Vivamus sollicitudin.</p>
+<p>Porta, mi justo elementum justo, vitae gravida dui sapien vel metus, Quisque elementum, mauris.</p>
 <a href="/">Msx Program</a>
-<p>Porta, mi justo elementum justo, vitae gravida dui sapien vel metus, Quisque elementum, mauris. Sed odio est, auctor ac, sollicitudin in, consequat vitae, orci.</p>
+<p>Porta, mi justo elementum justo, vitae gravida dui sapien vel metus, Quisque elementum, mauris.</p>
 <a href="/">PhD Program</a>
-<p>Porta, mi justo elementum justo, vitae gravida dui sapien vel metus, Quisque elementum, mauris. Macenas at justo id velit placerat molestie ultricies eu, sagittis non.</p>'
+<p>Porta, mi justo elementum justo, vitae gravida dui sapien vel metus, Quisque elementum, mauris.</p>'
       ),
   );
   return (object) array(
