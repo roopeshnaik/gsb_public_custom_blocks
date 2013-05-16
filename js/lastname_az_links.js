@@ -34,8 +34,6 @@
      var all_LI_elements = _this.find('ul li').length 
      var direction
      var dyn_margin = 0
-     var current_step = 0
-     var disable_nav = true
      var ul = _this.find('ul')
       
      
@@ -80,7 +78,6 @@
        })   
            
        $(next_nav).click(function(){
-         console.log('test')
         if(dyn_margin < -200) {
           makeDisabled(next_nav)
           return
