@@ -19,7 +19,7 @@ function gsb_public_custom_blocks_program_finder_content_type_render($subtype, $
 <p>This two-year, full-time general management program empowers and transforms the brightest, most passionate people in the world. You’ll develop your critical-thinking and personal leadership abilities in a creative and innovative environment that will help you cultivate your vision and build the foundation you need to make it a reality.</p>
 <a href="/programs/msx">MSx Program</a>
 <p>This 12-month, full-time program was designed specifically for mid-career professionals with at least eight years of work experience, and a desire to develop their strengths in general management, leadership, and innovation.</p></div><div class="column-b"><p>Participants, known as Stanford MSx Fellows, are a diverse representation of countries and companies around the world.</p>
-<a href="/phd">PhD Program</a>
+<a href="/programs/phd">PhD Program</a>
 <p>This program creates tomorrow’s transformative researchers, teachers, and scholars. This rigorous, full-time program spans 4-5 years, and is suited for individuals pursuing a career in academic research and teaching focused on management. You’ll capitalize on intimate class size and deep faculty engagement to consider the problems and opportunities faced by both the academic and business communities.</p></div></div>'
       ),
     array(
@@ -62,7 +62,7 @@ function gsb_public_custom_blocks_program_finder_content_type_render($subtype, $
 <p>Designed from the outset for individuals dedicated to transforming the world around them, the Stanford GSB MBA experience attracts the brightest, most passionate people in the world. Throughout this two-year residential program, you’ll develop your critical-thinking and personal leadership abilities, while you construct an invaluable global network of impressive professionals and faculty.</p>
 <a href="/programs/msx">MSx Program</a>
 <p>Formerly the Stanford Sloan Master’s Program, this intensive 12-month residential program is tailored to professionals with significant</p></div><div class="column-b"><p>managerial experience who are ready to move beyond past experience to higher levels of general management, key to the next phase of their careers.</p>
-<a href="/phd">PhD Program</a>
+<a href="/programs/phd">PhD Program</a>
 <p>Designed specifically to empower the next generation of academic thinkers and educators, the PhD program is central to Stanford GSB’s overall  mission of creating transformative leaders who go on to change the world through ideas and action. Candidates train in behavioral, economic, and mathematical sciences related to their chosen field.</p></div></div>'
       ),
       array(
