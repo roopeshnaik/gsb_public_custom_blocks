@@ -19,6 +19,13 @@ function gsb_public_custom_blocks_program_links_content_type_render($subtype, $c
           'cta-red-gradient',
         ),
       ),
+      'header' => array(
+        '#type' => 'container',
+        '#attributes' => array(
+          'id' => 'program-links-title',
+        ),
+        '#children' => t('Programs'),
+      ),
       'links' => array(
         '#theme' => 'links',
         '#links' => array(
