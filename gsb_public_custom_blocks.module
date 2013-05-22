@@ -86,6 +86,10 @@ function gsb_public_custom_blocks_block_info() {
       'info' => t('Custom CTA: Learn About Our Campus'),
       'cache' => DRUPAL_CACHE_GLOBAL,
     ),
+    'gpcb_last_updated' => array(
+      'info' => t('Last updated date'),
+      'cache' => DRUPAL_CACHE_GLOBAL,
+    )
   );
 }
 
@@ -153,6 +157,13 @@ function gsb_public_custom_blocks_block_view($delta = '') {
         '#theme' => 'breadcrumb',
         '#breadcrumb' => drupal_get_breadcrumb(),
       );
+      break;
+    case 'gpcb_last_updated':
+      $node = menu_get_object('node');
+      if (!empty($node)) {
+        $last_updated_date = format_date($node->changed, 'medium');
+        $block['content'] = '<b>Last Updated</b> ' . $last_updated_date;
+      }
       break;
   }
 
