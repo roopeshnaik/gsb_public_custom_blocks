@@ -84,7 +84,65 @@ function gsb_public_custom_blocks_block_prepare() {
 function gsb_public_custom_blocks_update_7000() {
   variable_set('gpcb_banner_tagline_value', t('What business challenge are you facing?'));
 
-  $blocks = gsb_public_custom_blocks_block_prepare();
+  $blocks = array(
+    array(
+      'module' => 'gsb_public_custom_blocks',
+      'delta' => 'gpcb_breadcrumbs',
+      'theme' => 'gsb_theme',
+      'status' => 1,
+      'weight' => 0,
+      'region' => 'banner',
+      'pages' => "business-insights/*\nevents\nevents/calendar\nevents/list",
+      'visibility' => 1,
+      'cache' => -1,
+    ),
+    array(
+      'module' => 'gsb_public_custom_blocks',
+      'delta' => 'gpcb_banner_title',
+      'theme' => 'gsb_theme',
+      'status' => 1,
+      'weight' => 1,
+      'region' => 'banner',
+      'pages' => "events\nevents/calendar\nevents/list\nbusiness-insights",
+      'visibility' => 1,
+      'cache' => -1,
+    ),
+    array(
+      'module' => 'gsb_public_custom_blocks',
+      'delta' => 'gpcb_banner_tagline',
+      'theme' => 'gsb_theme',
+      'status' => 1,
+      'weight' => 2,
+      'region' => 'banner',
+      'pages' => 'business-insights',
+      'visibility' => 1,
+      'cache' => -1,
+    ),
+  );
+  $query = db_insert('block')->fields(array('module', 'delta', 'theme', 'status', 'weight', 'region', 'pages', 'visibility', 'cache'));
+  foreach ($blocks as $block) {
+    $query->values($block);
+  }
+  $query->execute();
+}
+
+/**
+ * Configure new Last Updated block.
+ */
+function gsb_public_custom_blocks_update_7001() {
+  $blocks = array(
+    array(
+      'module' => 'gsb_public_custom_blocks',
+      'delta' => 'gpcb_last_updated',
+      'theme' => 'gsb_theme',
+      'status' => 1,
+      'weight' => 10,
+      'region' => 'content',
+      'pages' => 'programs/mba/*',
+      'visibility' => 1,
+      'cache' => -1,
+    ),
+  );
   $query = db_insert('block')->fields(array('module', 'delta', 'theme', 'status', 'weight', 'region', 'pages', 'visibility', 'cache'));
   foreach ($blocks as $block) {
     $query->values($block);
