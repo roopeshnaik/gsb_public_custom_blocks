@@ -130,22 +130,20 @@ function gsb_public_custom_blocks_update_7000() {
  * Configure new Last Updated block.
  */
 function gsb_public_custom_blocks_update_7001() {
-  $blocks = array(
-    array(
-      'module' => 'gsb_public_custom_blocks',
-      'delta' => 'gpcb_last_updated',
-      'theme' => 'gsb_theme',
-      'status' => 1,
-      'weight' => 10,
-      'region' => 'content',
-      'pages' => 'programs/mba/*',
-      'visibility' => 1,
-      'cache' => -1,
-    ),
+  $keys = array(
+    'module' => 'gsb_public_custom_blocks',
+    'delta' => 'gpcb_last_updated',
   );
-  $query = db_insert('block')->fields(array('module', 'delta', 'theme', 'status', 'weight', 'region', 'pages', 'visibility', 'cache'));
-  foreach ($blocks as $block) {
-    $query->values($block);
-  }
-  $query->execute();
+
+  $block = array(
+    'theme' => 'gsb_theme',
+    'status' => 1,
+    'weight' => 10,
+    'region' => 'content',
+    'pages' => 'programs/mba/*',
+    'visibility' => 1,
+    'cache' => -1,
+  );
+
+  db_merge('block')->key($keys)->fields($block)->execute();
 }
