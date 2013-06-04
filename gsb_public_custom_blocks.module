@@ -89,7 +89,11 @@ function gsb_public_custom_blocks_block_info() {
     'gpcb_last_updated' => array(
       'info' => t('Last updated date'),
       'cache' => DRUPAL_CACHE_GLOBAL,
-    )
+    ),
+    'gsb_featured_event' => array(
+      'info' => t('GSB Featured Event'),
+      'cache' => DRUPAL_CACHE_GLOBAL,
+    ),
   );
 }
 
@@ -164,6 +168,16 @@ function gsb_public_custom_blocks_block_view($delta = '') {
         $last_updated_date = format_date($node->changed, 'medium');
         $block['content'] = '<b>Last Updated</b> ' . $last_updated_date;
       }
+      break;
+    case 'gsb_featured_event':
+      $content = '';
+      if ($nid = variable_get('feature_flag_event', 0)) {
+        $node = node_load($nid);
+        if ($node) {
+          $content = node_view($node, 'featured');
+        }
+      }
+      $block['content'] = $content;
       break;
   }
 
