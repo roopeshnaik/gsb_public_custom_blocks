@@ -161,3 +161,25 @@ function gsb_public_custom_blocks_update_7001() {
    * db_merge('block')->key($keys)->fields($block)->execute();
    */
 }
+
+/**
+ * Configure new Last Updated block.
+ */
+function gsb_public_custom_blocks_update_7002() {
+  $keys = array(
+    'module' => 'gsb_public_custom_blocks',
+    'delta' => 'gpcb_last_updated',
+    'theme' => 'gsb_theme',
+  );
+
+  $block = array(
+    'status' => 1,
+    'weight' => 10,
+    'region' => 'content',
+    'pages' => 'programs/mba/*',
+    'visibility' => 1,
+    'cache' => -1,
+  );
+
+  db_merge('block')->key($keys)->fields($block)->execute();
+}
