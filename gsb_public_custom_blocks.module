@@ -251,3 +251,13 @@ function _gsb_public_custom_blocks_generate_tabs($tabs) {
   $content['#fieldgroups'] = $content['#groups'];
   return $content;
 }
+
+function gsb_public_custom_blocks_gsb_fpp_customizations_icons_alter(&$icons) {
+
+  if (isset($icons['lastname_az_links:lastname_az_links']['icon'])) {
+    $module_path = drupal_get_path('module', 'gsb_public_custom_blocks');
+    $icons['lastname_az_links:lastname_az_links']['icon'] = $module_path . '/images/lastname_az_links.png';
+  }
+
+}
+
