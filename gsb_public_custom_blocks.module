@@ -253,11 +253,18 @@ function _gsb_public_custom_blocks_generate_tabs($tabs) {
 }
 
 function gsb_public_custom_blocks_gsb_fpp_customizations_icons_alter(&$icons) {
-
-  if (isset($icons['lastname_az_links:lastname_az_links']['icon'])) {
-    $module_path = drupal_get_path('module', 'gsb_public_custom_blocks');
-    $icons['lastname_az_links:lastname_az_links']['icon'] = $module_path . '/images/lastname_az_links.png';
+  $module_path = drupal_get_path('module', 'gsb_public_custom_blocks');
+  $icons_settings = array(
+    'homepage_social_feed:homepage_social_feed' => 'homepage_social_feed.png',
+    'lastname_az_links:lastname_az_links' => 'lastname_az_links.png',
+    'media_toolkit:media_toolkit' => 'media_toolkit.png',
+    'program_finder:program_finder' => 'program_finder.png',
+    'program_links:program_links' => 'program_links.png',
+  );
+  foreach($icons_settings as $key => $value) {
+    if (isset($icons[$key]['icon'])) {
+      $icons[$key]['icon'] = $module_path . '/images/' . $value;
+    }
   }
-
 }
 
