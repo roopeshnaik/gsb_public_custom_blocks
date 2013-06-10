@@ -2,7 +2,7 @@
 
 $plugin = array(
   'title' => t('Home Page Social Feed'),
-  'category' => t('Content Panes'),
+  'category' => t('Other'),
   'single' => TRUE,
   'all contexts' => TRUE,
 );

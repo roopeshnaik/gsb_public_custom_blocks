@@ -2,7 +2,7 @@
 
 $plugin = array(
   'title' => t('Media Toolkit'),
-  'category' => t('Content Panes'),
+  'category' => t('Other'),
   'single' => TRUE,
   'all contexts' => TRUE,
 );

@@ -2,7 +2,7 @@
 
 $plugin = array(
   'title' => t('Program Links'),
-  'category' => t('Content Panes'),
+  'category' => t('Other'),
   'single' => TRUE,
   'all contexts' => TRUE,
 );
