@@ -11,6 +11,8 @@ $plugin = array(
  * Implements hook_PLUGIN_content_type_render().
  */
 function gsb_public_custom_blocks_program_finder_content_type_render($subtype, $conf, $panel_args, $context, $incoming) {
+  $easy_reponsive_tabs_path = libraries_get_path('easyResponsiveTabs');
+  drupal_add_js($easy_reponsive_tabs_path . '/easyResponsiveTabs.js');
   drupal_add_js(drupal_get_path('module', 'gsb_public_custom_blocks') . '/js/gsb_public_custom_blocks.js');
   $tabs = array(
     array(

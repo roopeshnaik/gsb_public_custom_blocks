@@ -240,6 +240,7 @@ function _gsb_public_custom_blocks_generate_tabs($tabs) {
     $content['#groups'][$group]->group_name = $key;
     $content['#groups'][$group]->format_type = 'tab';
     $content['#groups'][$group]->format_settings['formatter'] = 'closed';
+    $content['#groups'][$group]->format_settings['instance_settings']['classes'] = 'resp-tab-content';
     $content['#groups'][$group]->children[] = $group;
     $content['#groups'][$group]->label = $val['title'];
     $content['#groups'][$group]->weight = (int)$key;
