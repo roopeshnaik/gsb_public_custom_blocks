@@ -3,3 +3,10 @@ description = Custom blocks used just for this site.
 core = 7.x
 package = GSB
 
+
+
+; Information added by drush on 2013-06-13
+version = "master-dev"
+project = "gsb_public_custom_blocks"
+datestamp = "1371136732"
+
