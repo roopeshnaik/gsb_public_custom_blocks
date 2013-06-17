@@ -10,7 +10,7 @@ $plugin = array(
 /**
  * Implements hook_PLUGIN_content_type_render().
  */
-function gsb_public_custom_blocks_gsb_around_world_content_type_render($subtype, $conf, $panel_args, $context, $incoming) {
+function gsb_public_custom_blocks_cta_around_globe_content_type_render($subtype, $conf, $panel_args, $context, $incoming) {
   return (object) array(
     'content' => array(
       '#markup' => '<div class="designed-box cta-around-globe">
