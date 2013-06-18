@@ -48,7 +48,7 @@ function gsb_public_custom_blocks_program_finder_content_type_render($subtype, $
       array(
         'title' => 'Global',
         '#markup' => '<a href="/ignite">Stanford Ignite</a>
-<p>This unique certificate program helps innovators without graduate-level business training around the world formulate, develop, and commercialize their business ideas.</p>
+<p>This unique certificate program helps innovators around the world without graduate-level business training to formulate, develop, and commercialize their business ideas.</p>
 <p>Ignite is offered as a 9-week, part-time program in Bangalore, Beijing, Paris, and on the Stanford campus. A 4-week, full-time program is also available at Stanford.</p>
 <a href="/exed/custom.html">Custom Programs</a>
 <p>Our custom programs are designed to solve unique challenges faced by businesses around the world. Programs are tailored for specific needs to encourage participants to think strategically and effectively manage their organizations to grow and succeed in a global economy.</p>'
@@ -56,7 +56,7 @@ function gsb_public_custom_blocks_program_finder_content_type_render($subtype, $
       array(
         'title' => 'Entrepreneurship',
         '#markup' => '<a href="/ignite">Stanford Ignite</a>
-<p>A 9-week part-time program offered at Stanford, Bangalore, Beijing and Paris.  This unique certificate program helps innovators formulate, develop, and commercialize their business ideas.</p>
+<p>A 9-week part-time program offered at Stanford, Bangalore, Beijing and Paris. This unique certificate program helps innovators formulate, develop, and commercialize their business ideas.</p>
 <a href="/exed/epse">Social Innovation Programs</a>
 <p>Our social innovation programs focus on developing leaders who can solve the world\'s most challenging problems in areas such as education, the environment, poverty, healthcare, and social justice.</p>
 <a href="/exed/custom.html">Custom Programs</a>
