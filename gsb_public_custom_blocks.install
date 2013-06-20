@@ -188,7 +188,7 @@ function gsb_public_custom_blocks_update_7002() {
  * Configure GSB Featured Flag block
  */
 function gsb_public_custom_blocks_update_7003() {
-  $block = array(
+/**  $block = array(
     'module' => 'gsb_public_custom_blocks',
     'delta' => 'gsb_featured_event',
     'theme' => 'gsb_theme',
@@ -201,5 +201,5 @@ function gsb_public_custom_blocks_update_7003() {
   );
   $query = db_insert('block')->fields(array('module', 'delta', 'theme', 'status', 'weight', 'region', 'pages', 'visibility', 'cache'));
   $query->values($block);
-  $query->execute();
+  $query->execute();**/
 }
