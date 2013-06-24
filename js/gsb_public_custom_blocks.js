@@ -26,7 +26,7 @@
         Drupal.settings.gsb_public_custom_blocks.activated = true;
 
         // Add our responsive javascript.
-        if (Modernizr.mq('(max-width: 907px)')) {
+        if (Modernizr.mq('(max-width: 1165px)')) {
           $('.pane-program-finder .vertical-tabs-list').addClass('resp-tabs-list');
           $('.pane-program-finder .vertical-tabs').easyResponsiveTabs({type: 'accordion'});
         }
