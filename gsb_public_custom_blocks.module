@@ -299,7 +299,11 @@ function _gsb_public_custom_blocks_get_program_title() {
 
   $active_trail = menu_get_active_trail();
   $trail_length = count($active_trail);
-  $menu_name = $active_trail[$trail_length-1]['menu_name'];
+
+  $menu_name = '';
+  if (isset($active_trail[$trail_length-1]['menu_name'])) {
+    $menu_name = $active_trail[$trail_length-1]['menu_name'];
+  }
 
   $pos = strpos($menu_name, 'section-');
   if ($pos === false) {
