@@ -158,7 +158,7 @@ function gsb_public_custom_blocks_block_view($delta = '') {
     case 'gpcb_banner_title':
       $args = explode('/', trim(request_uri(), '/'));
       if ($args[0] == 'programs') {
-        $title = _gsb_public_custom_get_program_title();
+        $title = _gsb_public_custom_blocks_get_program_title();
       }
       else {
         $title = drupal_get_title();
@@ -295,7 +295,7 @@ function gsb_public_custom_blocks_gsb_fpp_customizations_icons_alter(&$icons) {
   }
 }
 
-function _gsb_public_custom_get_program_title() {
+function _gsb_public_custom_blocks_get_program_title() {
 
   $active_trail = menu_get_active_trail();
   $trail_length = count($active_trail);
