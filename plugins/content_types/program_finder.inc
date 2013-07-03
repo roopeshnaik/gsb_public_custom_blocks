@@ -86,7 +86,7 @@ function gsb_public_custom_blocks_program_finder_content_type_render($subtype, $
       ),
   );
   return (object) array(
-    'title' => t('Program Finder'),
+    'title' => t(''),
     'content' => _gsb_public_custom_blocks_generate_tabs($tabs),
   );
 }
