@@ -1,0 +1,1 @@
+<div class="weather-widget"><?php print $content; ?></div>
