@@ -1,0 +1,142 @@
+/* fonts: pulled from main stylesheet */
+
+@font-face {
+  font-family: "NewsGothicBT";
+  src: url('../fonts/236F40_0_0.eot');
+  src: url('../fonts/236F40_0_0.eot?#iefix') format('eot'), url('../fonts/236F40_0_0.woff') format('woff'), url('../fonts/236F40_0_0.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NewsGothicBT";
+  src: url('../fonts/236F40_1_0.eot');
+  src: url('../fonts/236F40_1_0.eot?#iefix') format('eot'), url('../fonts/236F40_1_0.woff') format('woff'), url('../fonts/236F40_1_0.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "NewsGothicBT";
+  src: url('../fonts/236F40_2_0.eot');
+  src: url('../fonts/236F40_2_0.eot?#iefix') format('eot'), url('../fonts/236F40_2_0.woff') format('woff'), url('../fonts/236F40_2_0.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NewsGothicBT";
+  src: url('../fonts/236F40_3_0.eot');
+  src: url('../fonts/236F40_3_0.eot?#iefix') format('eot'), url('../fonts/236F40_3_0.woff') format('woff'), url('../fonts/236F40_3_0.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "NewsGothicBT-Demi";
+  src: url('../fonts/236F40_C_0.eot');
+  src: url('../fonts/236F40_C_0.eot?#iefix') format('eot'), url('../fonts/236F40_C_0.woff') format('woff'), url('../fonts/236F40_C_0.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NewsGothicBT-Demi";
+  src: url('../fonts/236F40_D_0.eot');
+  src: url('../fonts/236F40_D_0.eot?#iefix') format('eot'), url('../fonts/236F40_D_0.woff') format('woff'), url('../fonts/236F40_D_0.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "arrow-double";
+  src: url('../fonts/arrow-double.eot');
+  src: url('../fonts/arrow-double.eot?#iefix') format('eot'), url('../fonts/arrow-double.woff') format('woff'), url('../fonts/arrow-double.ttf') format('truetype'), url('../fonts/arrow-double.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "external-link";
+  src: url('../fonts/external-link.eot');
+  src: url('../fonts/external-link.eot?#iefix') format('eot'), url('../fonts/external-link.woff') format('woff'), url('../fonts/external-link.ttf') format('truetype'), url('../fonts/external-link.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* custom map styles */
+
+body { margin:0; padding:0; }
+
+.mapwrap {
+  position: absolute;
+  top: 50px;
+  left: 300px;
+  width: 864px;
+  height: 499px;
+  border: 1px solid #e4e4e4;
+  padding: 2px;
+  background: #fff;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+}
+
+#map .map-tooltip {
+  top: 26px;
+  right: 26px;
+  border: 3px solid #fff;
+  font: 16px/1.25 "NewsGothicBT-Demi", Arial, sans-serif;
+  background-color: #efefef;
+  background-color: rgba(239, 239, 239, 0.9);
+  padding: 26px;
+  margin: 0;
+  border-radius: 0;
+}
+
+#map .map-tooltip a {
+  text-decoration: none;
+  color: #7f8400;
+}
+
+#map .map-tooltip p {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  color: #231f20;
+}
+
+#map .map-tooltip a:hover {
+  text-decoration: none;
+  color: #2d6280;
+}
+
+#map .map-tooltip h1 {
+  font-size: 22px;
+  margin: 0 0 .5em;
+  padding: 0;
+}
+
+#map .map-tooltip h1 a:after {
+  content:" »";
+}
+
+#map .map-tooltip h2 {
+  color: #857f80;
+  font-size: 16px;
+  margin: 0 0 .8em;
+  padding: 0;
+}
+
+#map .map-tooltip .close {
+  background: url('../images/close-button.png') top left no-repeat;
+  border-radius: 0;
+  width: 24px;
+  height: 24px;
+  top: 0;
+  right: 0;
+}
+
