@@ -15,15 +15,11 @@ function gsb_public_custom_blocks_preprocess_gsb_public_custom_blocks_weather_wi
 
   /* End Config Section */
 
-  if($zip != '') {
-    if (isset($_GET['units'])) {
-      $s_unit_of_measure = strtolower($_GET['units']);
-    }
-    else {
-      $s_unit_of_measure = DEFAULT_UNITS;
-    }
+  if(!empty($zip)) {
     $weather = new Weather();
-    $weather = $weather->getWeather($zip, $s_unit_of_measure);
+    $weather = $weather->getWeather($zip, DEFAULT_UNITS);
   }
-  $vars['content'] =  "<img style=\"vertical-align: middle\" src=\"".$weather['image']."\" alt=\"\" />&nbsp;&nbsp;<strong>".$weather['temp']."</strong>\n";
+
+  $vars['image'] = theme('image' , array('path' => $weather['image']));
+  $vars['temp'] = $weather['temp'];
 }
