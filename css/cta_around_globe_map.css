@@ -70,9 +70,7 @@
 body { margin:0; padding:0; }
 
 .mapwrap {
-  position: absolute;
-  top: 50px;
-  left: 300px;
+  position: relative;
   width: 864px;
   height: 499px;
   border: 1px solid #e4e4e4;
