@@ -1,8 +1,8 @@
 <?php
 
 $plugin = array(
-  'title' => t('GSB Around the Globe'),
-  'category' => t('Other'),
+  'title' => t('Custom CTA: GSB Around the Globe'),
+  'category' => t('Blocks'),
   'single' => TRUE,
   'all contexts' => TRUE,
 );
