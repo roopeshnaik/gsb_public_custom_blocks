@@ -39,22 +39,22 @@ function gsb_public_custom_blocks_program_links_content_type_render($subtype, $c
               ),
             ),
           ),
-          'phd-program' => array(
-            'title' => t('PhD Program'),
-            'href' => 'programs/phd',
-            'attributes' => array(
-              'class' => array(
-                'item-1',
-                'cta-link',
-              ),
-            ),
-          ),
           'msx-program' => array(
             'title' => t('MSx Program'),
             'href' => 'programs/msx',
             'attributes' => array(
               'class' => array(
                 'item-2',
+                'cta-link',
+              ),
+            ),
+          ),          
+          'phd-program' => array(
+            'title' => t('PhD Program'),
+            'href' => 'programs/phd',
+            'attributes' => array(
+              'class' => array(
+                'item-1',
                 'cta-link',
               ),
             ),
