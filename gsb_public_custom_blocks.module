@@ -290,7 +290,7 @@ function gsb_public_custom_blocks_gsb_fpp_customizations_icons_alter(&$icons) {
     'program_finder:program_finder' => 'program_finder.png',
     'program_links:program_links' => 'program_links.png',
     'block:gsb_public_custom_blocks-gpcb_about_campus' => 'learn.jpg',
-    'cta_around_globe:cta_around_globe' => 'world-map.jpg',
+    'cta_around_globe:cta_around_globe' => 'gsb-around-the-globe.png',
     'block:gsb_public_custom_blocks-gpcb_rethink' => 'rethink.jpg',
     'block:gsb_public_custom_blocks-gpcb_follow_us' => 'follow-us.jpg',
     'block:gsb_public_custom_blocks-gpcb_maps_parking_info_more' => 'get-directions.jpg',
