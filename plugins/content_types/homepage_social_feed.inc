@@ -15,10 +15,10 @@ function gsb_public_custom_blocks_homepage_social_feed_content_type_render($subt
     'content' => array(
       '#markup' => '<div class="twitter-feed designed-box feed-bg bg">
       <div class="follow-us-circles">
-        <a href="#" class="circle social-block-twitter"></a>
-        <a href="#" class="circle social-block-youtube"></a>
-        <a href="#" class="circle social-block-linkedin"></a>
-        <a href="#" class="circle social-block-facebook"></a>
+        <a href="https://twitter.com/stanfordbiz" target="_blank" class="circle social-block-twitter"></a>
+        <a href="http://www.youtube.com/stanfordbusiness" target="_blank" class="circle social-block-youtube"></a>
+        <a href="http://www.linkedin.com/company/stanford-graduate-school-of-business" target="_blank" class="circle social-block-linkedin"></a>
+        <a href="https://www.facebook.com/StanfordGSB" target="_blank" class="circle social-block-facebook"></a>
       </div>
       <h5><a href="http://twitter.com/@stanfordbiz">Stanford Business</a></h5>
         <a href="http://twitter.com/@stanfordbiz">@Stanford Biz</a>
