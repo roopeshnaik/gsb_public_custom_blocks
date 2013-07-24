@@ -1,7 +1,7 @@
 <?php
 
 $plugin = array(
-  'title' => t('Custom CTA: GSB Around the Globe'),
+  'title' => t('Custom CTA: GSB Around the World'),
   'category' => t('Blocks'),
   'single' => TRUE,
   'all contexts' => TRUE,
@@ -14,9 +14,9 @@ function gsb_public_custom_blocks_cta_around_globe_content_type_render($subtype,
   return (object) array(
     'content' => array(
       '#markup' => '<div class="designed-box cta-around-globe">
-        <a href="#" class="around-globe-link">
+        <a href="/stanford-gsb-experience/gsb-around-world" class="around-globe-link">
           <div class="link-inner">
-            <div class="link-title">GSB Around <br /> the Globe</div>
+            <div class="link-title">GSB Around <br /> the World</div>
           </div>
         </a>
       </div>',
