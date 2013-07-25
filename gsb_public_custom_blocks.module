@@ -193,7 +193,7 @@ function gsb_public_custom_blocks_block_view($delta = '') {
     case 'gpcb_last_updated':
       $node = menu_get_object('node');
       if (!empty($node)) {
-        $last_updated_date = format_date($node->changed, 'medium');
+        $last_updated_date = format_date($node->changed, 'custom', 'j M Y');
         $block['content'] = '<b>Last Updated</b> ' . $last_updated_date;
       }
       break;
