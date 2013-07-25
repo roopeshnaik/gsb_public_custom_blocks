@@ -3,6 +3,6 @@
     <b>RE: </b>THINK
   </p>
   <p class="cta-description">
-    Get the latest business ideas & insights.<b> Sign up for our eNews</b><i></i>
+    Get the latest business ideas and insights.<b> Sign up for our eNews</b><i></i>
   </p>
 </a>
