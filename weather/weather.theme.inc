@@ -1,6 +1,6 @@
 <?php
 
-function gsb_public_custom_blocks_preprocess_gsb_public_custom_blocks_weather(&$vars) {
+function gsb_public_custom_blocks_preprocess_gsb_public_custom_blocks_weather_widget(&$vars) {
   include_once libraries_get_path('weather') . '/weather.class.php';
 
   /* Config Section */
