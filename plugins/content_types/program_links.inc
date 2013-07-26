@@ -44,7 +44,7 @@ function gsb_public_custom_blocks_program_links_content_type_render($subtype, $c
             'href' => 'programs/msx',
             'attributes' => array(
               'class' => array(
-                'item-2',
+                'item-1',
                 'cta-link',
               ),
             ),
@@ -54,7 +54,7 @@ function gsb_public_custom_blocks_program_links_content_type_render($subtype, $c
             'href' => 'programs/phd',
             'attributes' => array(
               'class' => array(
-                'item-1',
+                'item-2',
                 'cta-link',
               ),
             ),
