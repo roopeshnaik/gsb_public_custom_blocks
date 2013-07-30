@@ -17,3 +17,10 @@ version = "master-dev"
 project = "gsb_public_custom_blocks"
 datestamp = "1373580514"
 
+
+
+; Information added by drush on 2013-07-30
+version = "master-dev"
+project = "gsb_public_custom_blocks"
+datestamp = "1375218356"
+
