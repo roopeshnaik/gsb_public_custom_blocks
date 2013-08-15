@@ -112,21 +112,23 @@ body { margin:0; padding:0; }
   color: #2d6280;
 }
 
-#map .map-tooltip h1 { 
-  font-size: 22px; 
-  margin: 0 0 .5em; 
-  padding: 0; 
+#map .map-tooltip h1 {
+  font-size: 22px;
+  line-height: 26px;
+  margin: 0 0 .5em;
+  padding: 0;
 }
 
-#map .map-tooltip h1 a:after {  
+#map .map-tooltip h1 a:after {
   content:" »";
 }
 
-#map .map-tooltip h2 { 
-  color: #857f80; 
-  font-size: 16px; 
-  margin: 0 0 .8em; 
-  padding: 0; 
+#map .map-tooltip h2 {
+  color: #857f80;
+  font-size: 16px;
+  line-height: 18px;
+  margin: 0 0 .8em;
+  padding: 0;
 }
 
 #map .map-tooltip .close {
